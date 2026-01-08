@@ -117,3 +117,21 @@ footer {
     color: white;
     margin-top: 50px;
 }
+
+/* Navigation - Day 2 enhanced styling */
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
