@@ -5,26 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Projects page grid */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .project-card p {
+            padding: 0 15px 20px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="project.html">Projects</a>
+        <a href="#">Contact</a>
+        <a href="#">Video</a>
+        <a href="#">Site Report</a>
     </nav>
 
     <h1>My Projects</h1>
 
-    <div class="project">
-        <h2>Project 1</h2>
-        <img src="images/example.jpg" alt="Project 1">
-        <p>Description of Project 1.</p>
-    </div>
 
-    <div class="project">
-        <h2>Project 2</h2>
-        <img src="images/example2.jpg" alt="Project 2">
-        <p>Description of Project 2.</p>
+    <div class="projects-grid">
+
+        <div class="project-card">
+        <img src="images/placeholder1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/placeholder2.png" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of Project 2. </p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/placeholder3.png" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Description of Project 3. </p>
+        </div>
     </div>
 
 </body>
 </html>
+ 
+
